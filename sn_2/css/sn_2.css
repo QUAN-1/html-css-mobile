@@ -1,0 +1,115 @@
+body{
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible给我们划分了10等份 */
+    widows: 10rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background: #f2f2f2;
+}
+a{
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+/* 这个插件默认的html文字大小cssroot 16px */
+
+/* 如果超过了750，就按750的设计稿走 */
+@media screen and (min-width:750px){
+    html{
+        font-size: 75px!important;
+    }
+}
+
+.search_content{
+    display: flex;
+    position: fixed;
+    width: 10rem;
+    height: 1.173333rem;
+    background-color: #FFC001;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.classify{
+    width:.586667rem;
+    height: .933333rem;
+    margin: .2rem;
+    background: url(../images/classify.png) no-repeat;
+    background-size: .586667rem .933333rem;
+}
+
+.search{
+    flex: 1;
+}
+
+.search input{
+    width: 100%;
+    height: .88rem;
+    background-color: #FFF2CC;
+    margin-top: .16rem;
+    color: #757575;
+    border: 0;
+    border-radius: .44rem;
+    outline: none;
+    padding-left: .733333rem;
+    font-size: .333333rem;
+}
+
+.login{
+    width: 1rem;
+    height: .933333rem;
+    line-height: .933333rem;
+    margin: .133333rem;
+    text-align: center;
+    color: #fff;
+}
+
+/* banner */
+.banner{
+    width: 10rem;
+    height: 4.906667rem;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+/* ad */
+.ad{
+    display: flex;
+}
+
+.ad a{
+    flex: 1;
+}
+
+.ad a img{
+    width: 100%;
+}
+
+/* nav */
+nav{
+    width: 10rem;
+}
+
+nav a{
+    float: left;
+    width: 2rem;
+    height: 1.866667rem;
+    text-align: center;
+}
+
+nav a img{
+    width: 1.093333rem;
+    height: 1.093333rem;
+    display: block;
+    margin: .133333rem auto 0;
+}
+nav a span{
+    font-size: .333333rem;
+    color: #333;
+}
